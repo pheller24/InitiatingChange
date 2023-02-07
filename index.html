@@ -4,20 +4,370 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Initiating change</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+        <style>
+            :root {
+                --r-heading1-size: 1.5em;
+                --r-heading2-size: 1.2em;
+                --r-heading-text-transform: none;
+            }
+            
+            .reveal ol ul {
+                margin-left: 0;
+            }
+            
+            .reveal h1 sub {
+                display: block;
+                font-size: .5em;
+                line-height: inherit;
+                bottom: 0;
+            }
+            
+            figure {
+                text-align: center;
+            }
+            
+            figure img {
+                display: inline-block;
+            }
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                important: true
+            }
+        </script>
 	</head>
-	<body>
+	<body class="text-xl">
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+                <section>
+                    <h1>
+                        Initiating change
+                        <sub>An approach for Developers</sub>
+                    </h1>
+                </section>
+                
+                <section>
+                    <section data-background-image="/assets/crazy_tree.png">
+
+                    </section>
+                                        
+                    <section>
+                        <h1>We all have to deal with legacy</h1>
+                    </section>
+                    
+                    <section>
+                        <h1>Legacy code is good</h1>
+
+                        <footer>
+                            <ul class="list-none">
+                                <li>💰 It earns money</li>
+                                <li>🧠 You can learn a lot</li>
+                            </ul>
+                        </footer>
+                    </section>
+                    
+                    <section>
+                        <h1>Legacy still hurts *</h1>
+                        <footer>
+                            <ul class="list-none">
+                                <li>* gray hair / stress</li>
+                                <li>* could earn more money</li>
+                            </ul>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h1>Legacy is <span class="text-red-600">not</span> limited to Code</h1>
+                    </section>
+
+                    <section>
+                        <h1>Possible reasons for legacy you never though of</h1>
+                        <p>(I'll leave out the obvious ones)</p>
+                    </section>
+                    
+                    <section>
+                        <h1>Real-World-Examples *</h1>
+
+                        <footer>
+                            <small>
+                                * Regardless of what we discover,
+                                we understand and truly believe that everyone did the best job they could,
+                                given what was known at the time, their skills and abilities, the resources available,
+                                and the situation at hand.
+                            </small>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <figure>
+                            <img src="/assets/georgia-vagim-ny-lHmsHYHk-unsplash.jpg" alt="">
+                        </figure>
+                    </section>
+
+                    <section>
+                        <h3>#1 - Broken salary model</h3>
+                        
+                        <ol>
+                            <li>Pay developers bonus for <code>Number of bugs fixed</code></li>
+                            <li>They "accidentally" write crappy code</li>
+                            <li>They fix bugs</li>
+                            <li>🤑 Profit 🤑</li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h3>#2 - The live "Proof of concept"</h3>
+
+                        <ol>
+                            <li>Request a "Proof of concept"</li>
+                            <li>Deploy it without investing even one more minute</li>
+                            <li>🐞🐛 Profit 🐛🐜</li>
+                        </ol>
+                    </section>
+
+                    <section>
+                        <h3>#3 - the fast workaround</h3>
+
+                        <figure>
+                            <blockquote>
+                                I wrote a new legacy tool!
+                            </blockquote>
+                            <figcaption>
+                                <cite>my former boss Franz *</cite>
+                            </figcaption>
+                        </figure>
+
+                        <footer class="text-lg">
+                            <ul class="list-none">
+                                <li>* we had our reasons</li>
+                                <li>* I loved working with you :-)</li>
+                            </ul>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h3>#4 - Maultasch-Pattern *</h3>
+
+                        <ol>
+                            <li>Build your own PHP4-Framework</li>
+                            <li>Wrap it in FuelPHP</li>
+                            <li>Add sprinkles of CodeIgniter</li>
+                            <li>🍳 Cook it for a decade without cleanup</li>
+                            <li>Wrap it in Symfony</li>
+                            <li>Serve while hot 🧨🔥</li>
+                        </ol>
+
+                        <footer class="text-lg">
+                            <ul class="list-none">
+                                <li>* <a href="https://en.wikipedia.org/wiki/Maultasche">Maultasch</a> is <a href="https://en.wikipedia.org/wiki/Swabia">swabian</a> pasta</li>
+                            </ul>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <figure>
+                            <img src="/assets/peter-neumann-mUtYXnpW1ts-unsplash.jpg" alt="">
+                        </figure>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h1>We need change</h1>
+                    </section>
+
+                    <section>
+                        <div class="w-1/2 mx-auto">
+                            <blockquote class="twitter-tweet center"><p lang="en" dir="ltr">Software architecture happens whether you like it or not</p>&mdash; Jason Gorman @jasongorman@mastodon.cloud (@jasongorman) <a href="https://twitter.com/jasongorman/status/1621193276215681030?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </section>
+
+                    <section>
+                        <figure>
+                            <blockquote>
+                                <p>Responding to change<br/><sub>over following a plan</sub></p>
+                            </blockquote>
+
+                            <figcaption>
+                                <cite><a href="https://agilemanifesto.org/">https://agilemanifesto.org/</a></cite>
+                            </figcaption>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <h1>Change management *</h1>
+                        
+                        <ul>
+                            <li>Help them adapt to change</li>
+                            <li>Change smoothly</li>
+                            <li>Automate it, keep it</li>
+                            <li>Celebrate wins</li>
+                        </ul>
+
+                        <footer class="text-lg">
+                            <ul class="list-none">
+                                <li>* i did not use the <a href="https://www.resonanceglobal.com/blog/what-is-the-adkar-model-of-change-management">ADKAR</a> Model, because I hate abbrevations</li>
+                            </ul>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h1>Every Team is different</h1>
+
+                        <figure class="mx-auto w-1/2">
+                            <img src="/assets/dev_team.png" alt="">
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <h2>If you don't agree on a change</h2>
+
+                        <ul>
+                            <li>use simple examples</li>
+                            <li>move on *</li>
+                            <li>come back later</li>
+                        </ul>
+
+                        <footer>
+                            <p><small>* convince them, build coalitions, collect evidence.<br/>Maybe after incidents / production bugs / customer complaints.</small></p>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h1>Prioritization</h1>
+                        
+                        <p>The right change can be wrong at the wrong time</p>
+                    </section>
+                </section>
+                
+                <section>
+                    <section>
+                        <h1>Start simple,<br/>low-hanging 🍎</h1>
+
+                        <p>ask, listen, analyze, verify</p>
+                        
+                        <ul class="text-lg">
+                            <li>Retro-Meetings</li>
+                            <li>Post-Mortems</li>
+                            <li>Jira-Bugs</li>
+                            <li>Code-Reviews</li>
+                            <li>Pair-Programming / 1on1s</li>
+                            <li>Upcoming tasks</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h1>Code-Analysis</h1>
+                        <p>Look at the Code, include GIT-History</p>
+                        
+                        <figure>
+                            <img src="/assets/churn.png" alt="">
+                            <figcaption class="text-lg">Complexity vs Modifications using <a href="https://github.com/bmitch/churn-php">ChurnPHP</a></figcaption>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <h1>CI Feedback</h1>
+                        
+                        <figure>
+                            <img src="/assets/pipeline.png" alt="">
+                            <figcaption>CI should run fast. "fast" depends :-)</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section>
+                        <h1>Many Bugs are type related</h1>
+                        
+                        <figure>
+                            <pre><code>vendor/bin/psalm --stats</code></pre>
+                            
+                            <img src="/assets/psalm-stats.png" alt="">
+                            <figcaption class="text-lg"><a href="https://psalm.dev/">Psalm</a> Type coverage</figcaption>
+                        </figure>
+                    </section>
+                    
+                    <section data-background-image="/assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg">
+                        <div class="bg-white p-8 -top-8">
+                            <h1>Don't hurry</h1>
+                            <p>Some people might be overwhelmed by too fast changes.<br/>Prefer Baby-steps 👶</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <figure>
+                            <blockquote>
+                                <p>Individuals and interactions<br/><sub>over processes and tools</sub></p>
+                            </blockquote>
+
+                            <figcaption>
+                                <cite><a href="https://agilemanifesto.org/">https://agilemanifesto.org/</a></cite>
+                            </figcaption>
+
+                            <p>
+                                We want to <strong class="text-red-600">focus</strong> on interaction that cannot be automated.
+                            </p>
+                        </figure>
+                    </section>
+
+                    <section>
+                        <h1>Automate rules you want to keep</h1>
+                        
+                        <ul>
+                            <li>
+                                Validate new code only
+                                <ul>
+                                    <li>Baseline Feature (PsalmPHP, PHPStan, Deptrac, PHPat, PHPMD)</li>
+                                    <li>automate using <a href="https://cs.symfony.com/">PHPCS Fixer</a></li>
+                                    <li>automate using <a href="https://getrector.com/">RectorPHP</a></li>
+                                </ul>
+                            </li>
+                            <li>Use existing rules (<a href="https://mlocati.github.io/php-cs-fixer-configurator/#version:3.14">CS-Fixer</a>,
+                                <a href="https://getrector.com/">RectorPHP</a>, <a href="https://phpmd.org/">PHPMD</a>...)</li>
+                            <li>Implement your own rules (<a href="https://getrector.com/">RectorPHP</a>, <a href="https://qossmic.github.io/deptrac/">Deptrac</a>, <a
+                                    href="https://github.com/carlosas/phpat">PHPat</a>, <a href="https://psalm.dev/docs/running_psalm/plugins/authoring_plugins/">Psalm</a>...)</li>
+                            <li>Start with important rules</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Problem-Beispiele</h2>
+                    <ol>
+                        <li>Slow Pipeline / Slow Feedback</li>
+                        <li>Missing automated tests</li>
+                        <li>Bugs everywhere</li>
+                        <li>Komplexe Applikation</li>
+                        <li>Große PRs</li>
+                        <li>Schlechte Code-Reviews</li>
+                        <li>Schlechter Umgang mit Bugs & Incidents</li>
+                        <li>Bad Tickets</li>
+                        <li>Slow testing process</li>
+                        <li>Technische Schuld wird nie abbezahlt</li>
+                        <li>Keiner weiß, wie etwas funktioniert</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Measure & Celebrate</h2>
+                    </section>
+                    <section>
+                        - What do we want to measure
+                        - Iteration review
+                        - Iterate
+                        - Christmas review
+                    </section>
+                </section>
 			</div>
 		</div>
 
@@ -31,7 +381,11 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+                slideNumber: true,
+                navigationMode: 'linear',
+                transition: 'none',
+                backgroundTransition: 'fade',
+                autoAnimate: false,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
