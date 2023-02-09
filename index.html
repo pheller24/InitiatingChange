@@ -37,6 +37,21 @@
             figure img {
                 display: inline-block;
             }
+            
+            blockquote {
+                border: 0 !important;
+                border-left: 5px solid orange !important;
+            }
+            
+            blockquote + figcaption {
+                text-align: right !important;
+                width: 70% !important;
+                margin: 0 auto !important;
+            }
+
+            blockquote + figcaption cite {
+                font-size: .5em !important;
+            }
         </style>
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
@@ -53,6 +68,29 @@
                         Initiating change
                         <sub>An approach for Developers</sub>
                     </h1>
+
+
+                    <footer class="mt-32">
+                        <p><small>Patrick Heller<br/><a href="https://twitter.com/psren">twitter.com/psren</a></small></p>
+                    </footer>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>> 10yrs of symfony</li>
+                            <li>multiple legacy projects to Symfony</li>
+                            <li>multiple, very different teams</li>
+                            <li>Backend Lead Dev @ Digistore24</li>
+                        </ul>
+
+                        <ul>
+                            <li>Legacy</li>
+                            <li>Examples</li>
+                            <li>How Change software project</li>
+                            <li>Where change</li>
+                            <li>Bad examples</li>
+                            <li>Learn from bad examples</li>
+                        </ul>
+                    </aside>
                 </section>
                 
                 <section>
@@ -62,6 +100,12 @@
                                         
                     <section>
                         <h1>We all have to deal with legacy</h1>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Ferdi: Wie kann man in 2 Monaten so Mist erzeugen?</li>
+                            </ul>
+                        </aside>
                     </section>
                     
                     <section>
@@ -73,6 +117,13 @@
                                 <li>🧠 You can learn a lot</li>
                             </ul>
                         </footer>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Great developers</li>
+                                <li>Software-Design</li>
+                            </ul>
+                        </aside>
                     </section>
                     
                     <section>
@@ -83,15 +134,18 @@
                                 <li>* could earn more money</li>
                             </ul>
                         </footer>
+                        
+                        <aside class="notes">
+                            <ul>
+                                <li>Weekly incidents</li>
+                                <li>Panic mode</li>
+                            </ul>
+                        </aside>
                     </section>
 
                     <section>
-                        <h1>Legacy is <span class="text-red-600">not</span> limited to Code</h1>
-                    </section>
-
-                    <section>
-                        <h1>Possible reasons for legacy you never though of</h1>
-                        <p>(I'll leave out the obvious ones)</p>
+                        <h1>Possible reasons for bad Code</h1>
+                        <p>(I'll leave out the boring ones)</p>
                     </section>
                     
                     <section>
@@ -142,7 +196,7 @@
                                 I wrote a new legacy tool!
                             </blockquote>
                             <figcaption>
-                                <cite>my former boss Franz *</cite>
+                                <cite>my ex boss Franz *</cite>
                             </figcaption>
                         </figure>
 
@@ -152,10 +206,18 @@
                                 <li>* I loved working with you :-)</li>
                             </ul>
                         </footer>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>It's fine</li>
+                                <li>many such tools</li>
+                                <li>Should pay dept</li>
+                            </ul>
+                        </aside>
                     </section>
 
                     <section>
-                        <h3>#4 - Maultasch-Pattern *</h3>
+                        <h3>#4 - Lasagna-Pattern</h3>
 
                         <ol>
                             <li>Build your own PHP4-Framework</li>
@@ -165,12 +227,17 @@
                             <li>Wrap it in Symfony</li>
                             <li>Serve while hot 🧨🔥</li>
                         </ol>
+                    </section>
 
-                        <footer class="text-lg">
-                            <ul class="list-none">
-                                <li>* <a href="https://en.wikipedia.org/wiki/Maultasche">Maultasch</a> is <a href="https://en.wikipedia.org/wiki/Swabia">swabian</a> pasta</li>
+                    <section>
+                        <h1>Legacy is <span class="text-red-600">not</span> limited to Code</h1>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Meetings</li>
+                                <li>Company processes</li>
                             </ul>
-                        </footer>
+                        </aside>
                     </section>
 
                     <section>
@@ -178,17 +245,47 @@
                             <img src="/assets/peter-neumann-mUtYXnpW1ts-unsplash.jpg" alt="">
                         </figure>
                     </section>
+                    
+                    <section>
+                        <h1>Slow processes</h1>
+
+                        <p>Code-Review, Testing, 1000 Meetings, ...</p>
+                    </section>
                 </section>
                 
                 <section>
                     <section>
                         <h1>We need change</h1>
+                        
+                        <p>... to stay ahead of competitors</p>
+                    </section>
+
+                    <section>
+                        <h1>You can initiate changes</h1>
+                        <p>but you can't force it</p>
+                    </section>
+
+                    <section>
+                        <h1>Get them on board</h1>
+                        <p>they might be better drivers</p>
+                    </section>
+
+                    <section>
+                        <h1>Change is hard work</h1>
+                        <p>and won't happen automatically *</p>
                     </section>
 
                     <section>
                         <div class="w-1/2 mx-auto">
                             <blockquote class="twitter-tweet center"><p lang="en" dir="ltr">Software architecture happens whether you like it or not</p>&mdash; Jason Gorman @jasongorman@mastodon.cloud (@jasongorman) <a href="https://twitter.com/jasongorman/status/1621193276215681030?ref_src=twsrc%5Etfw">February 2, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         </div>
+                        <p>* this is not automatically</p>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Plans are nice ... but</li>
+                            </ul>
+                        </aside>
                     </section>
 
                     <section>
@@ -202,21 +299,26 @@
                             </figcaption>
                         </figure>
                     </section>
+                    
+                    <section>
+                        <h1>Example: Code-Review</h1>
+                        
+                        <p>You notice a pattern is bad, but<br/>"it was always done like that"</p>
+                    </section>
 
                     <section>
-                        <h1>Change management *</h1>
+                        <h1>Change management</h1>
                         
                         <ul>
+                            <li>Help them * understand why</li>
                             <li>Help them adapt to change</li>
                             <li>Change smoothly</li>
-                            <li>Automate it, keep it</li>
+                            <li>Automate to keep it</li>
                             <li>Celebrate wins</li>
                         </ul>
 
-                        <footer class="text-lg">
-                            <ul class="list-none">
-                                <li>* i did not use the <a href="https://www.resonanceglobal.com/blog/what-is-the-adkar-model-of-change-management">ADKAR</a> Model, because I hate abbrevations</li>
-                            </ul>
+                        <footer>
+                            <p><small>* them could be you</small></p>
                         </footer>
                     </section>
 
@@ -243,15 +345,29 @@
                     </section>
 
                     <section>
-                        <h1>Prioritization</h1>
-                        
-                        <p>The right change can be wrong at the wrong time</p>
+                        <figure>
+                            <blockquote>
+                                <p>Individuals and interactions<br/><sub>over processes and tools</sub></p>
+                            </blockquote>
+
+                            <figcaption>
+                                <cite><a href="https://agilemanifesto.org/">https://agilemanifesto.org/</a></cite>
+                            </figcaption>
+                        </figure>
+
+                        <p>If a process doesn't help, drop it</p>
                     </section>
                 </section>
                 
                 <section>
                     <section>
-                        <h1>Start simple,<br/>low-hanging 🍎</h1>
+                        <h1>Prioritization</h1>
+
+                        <p>The right thing at a wrong time<br/>is a wrong thing.</p>
+                    </section>
+                    
+                    <section>
+                        <h1>Gather feedback</h1>
 
                         <p>ask, listen, analyze, verify</p>
                         
@@ -267,7 +383,12 @@
                     </section>
                     
                     <section>
+                        <h1>Start simple,<br/>low-hanging 🍎</h1>
+                    </section>
+                    
+                    <section>
                         <h1>Code-Analysis</h1>
+                        
                         <p>Look at the Code, include GIT-History</p>
                         
                         <figure>
@@ -275,31 +396,114 @@
                             <figcaption class="text-lg">Complexity vs Modifications using <a href="https://github.com/bmitch/churn-php">ChurnPHP</a></figcaption>
                         </figure>
                     </section>
-
-                    <section>
-                        <h1>CI Feedback</h1>
-                        
-                        <figure>
-                            <img src="/assets/pipeline.png" alt="">
-                            <figcaption>CI should run fast. "fast" depends :-)</figcaption>
-                        </figure>
-                    </section>
                     
                     <section>
-                        <h1>Many Bugs are type related</h1>
-                        
+                        <h1>Types</h1>
+                        <p>Many Bugs are type related</p>
+
                         <figure>
                             <pre><code>vendor/bin/psalm --stats</code></pre>
-                            
+
                             <img src="/assets/psalm-stats.png" alt="">
                             <figcaption class="text-lg"><a href="https://psalm.dev/">Psalm</a> Type coverage</figcaption>
                         </figure>
                     </section>
                     
+                    <section>
+                        <h1>What could go wrong</h1>
+                        <p>... using PHPStan *</p>
+
+                        <footer>
+                            <small>
+                                * Not PHPStans fault
+                            </small>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h1>What could go wrong with PHPStan</h1>
+
+                        <ul>
+                            <li>Team not that experienced</li>
+                            <li>very strict settings</li>
+                            <li>CI stopped their usual workflow *</li>
+                            <li>Frustration</li>
+                        </ul>
+
+                        <footer class="mt-8">
+                            <small>
+                                * Baseline-Feature did not exist back then
+                            </small>
+                        </footer>
+                    </section>
+                    
+                    <section>
+                        <h1>Help them to adapt</h1>
+                        
+                        <ul>
+                            <li>Experienced: Strict settings</li>
+                            <li>In this case: Lax settings first, then increase</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h1>Code-Style</h1>
+                        <p>A solved Problem (hopefully)</p>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Code-Review discussions</li>
+                                <li>Tabs vs spaces</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h1>What could go wrong</h1>
+                        <p>... using PHP-CS-Fixer *</p>
+
+                        <footer>
+                            <small>
+                                * Not PHP-CS-Fixer fault
+                            </small>
+                        </footer>
+                    </section>
+
+                    <section>
+                        <h1>What could go wrong with...<br/>PHP-CS-Fixer?</h1>
+
+                        <ul>
+                            <li>slow deployment process (multiple hours)</li>
+                            <li>no rollback strategy</li>
+                            <li>skipped QA, because its only Code-Style</li>
+                            <li><a href="https://cs.symfony.com/doc/ruleSets/PhpCsFixerRisky.html">Risky rules</a></li>
+                        </ul>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>high 5 digit lost / sales</li>
+                                <li>Why, for Code-Style?</li>
+                                <li>Trust issues</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h1>Trust issues</h1>
+                        <p>money gone for Code-Styling?</p>
+                    </section>
+                    
                     <section data-background-image="/assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg">
                         <div class="bg-white p-8 -top-8">
                             <h1>Don't hurry</h1>
-                            <p>Some people might be overwhelmed by too fast changes.<br/>Prefer Baby-steps 👶</p>
+                            <p>Prefer Baby-steps 👶</p>
+                        </div>
+                    </section>
+
+                    <section data-background-image="/assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg">
+                        <div class="bg-white p-8 -top-8">
+                            <h1>Don't hurry</h1>
+                            <p>Prefer Baby-steps 👶<br/>People might be overwhelmed.</p>
                         </div>
                     </section>
                     
@@ -312,11 +516,11 @@
                             <figcaption>
                                 <cite><a href="https://agilemanifesto.org/">https://agilemanifesto.org/</a></cite>
                             </figcaption>
-
-                            <p>
-                                We want to <strong class="text-red-600">focus</strong> on interaction that cannot be automated.
-                            </p>
                         </figure>
+
+                        <p>
+                            We want to <strong class="text-red-600">focus</strong> on interaction that cannot be automated.
+                        </p>
                     </section>
 
                     <section>
@@ -335,38 +539,87 @@
                                 <a href="https://getrector.com/">RectorPHP</a>, <a href="https://phpmd.org/">PHPMD</a>...)</li>
                             <li>Implement your own rules (<a href="https://getrector.com/">RectorPHP</a>, <a href="https://qossmic.github.io/deptrac/">Deptrac</a>, <a
                                     href="https://github.com/carlosas/phpat">PHPat</a>, <a href="https://psalm.dev/docs/running_psalm/plugins/authoring_plugins/">Psalm</a>...)</li>
-                            <li>Start with important rules</li>
                         </ul>
                     </section>
                 </section>
 
                 <section>
-                    <h2>Problem-Beispiele</h2>
-                    <ol>
-                        <li>Slow Pipeline / Slow Feedback</li>
-                        <li>Missing automated tests</li>
-                        <li>Bugs everywhere</li>
-                        <li>Komplexe Applikation</li>
-                        <li>Große PRs</li>
-                        <li>Schlechte Code-Reviews</li>
-                        <li>Schlechter Umgang mit Bugs & Incidents</li>
-                        <li>Bad Tickets</li>
-                        <li>Slow testing process</li>
-                        <li>Technische Schuld wird nie abbezahlt</li>
-                        <li>Keiner weiß, wie etwas funktioniert</li>
-                    </ol>
-                </section>
-                
-                <section>
                     <section>
                         <h2>Measure & Celebrate</h2>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Slow progress</li>
+                                <li>Show what we accomplished</li>
+                                <li>Motivation</li>
+                            </ul>
+                        </aside>
                     </section>
                     <section>
-                        - What do we want to measure
-                        - Iteration review
-                        - Iterate
-                        - Christmas review
+                        <h1>Metrics</h1>
+                        
+                        <p>Code-Coverage is <span class="text-red-600">not</span> important *</p>
+
+                        <footer>
+                            <small>
+                                * There might be better metrics
+                            </small>
+                        </footer>
                     </section>
+
+                    <section>
+                        <h1>Metrics</h1>
+
+                        <p>Choose metrics that matter</p>
+                        
+                        <small>
+                            <ul>
+                                <li>Customer Feedback</li>
+                                <li>Incidents per year</li>
+                                <li>Time to market</li>
+                                <li>...</li>
+                            </ul>
+                        </small>
+                    </section>
+
+                    <section>
+                        <h1>Metrics</h1>
+
+                        <p>If you want Code-Metrics</p>
+
+                        <small>
+                            <ul>
+                                <li>Complexity</li>
+                                <li>Type Coverage</li>
+                                <li><a href="https://testing.googleblog.com/2011/02/this-code-is-crap.html">CRAP</a>(Change risk anti pattern)</li>
+                            </ul>
+                        </small>
+
+                        <aside class="notes">
+                            <ul>
+                                <li>Code-Coverage included in CRAP</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    
+                    <section>
+                        <h1>Celebrate</h1>
+                        
+                        <p>Do good and talk about it</p>
+                        
+                        <ul>
+                            <li>Iteration Review</li>
+                            <li>Yearly review</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Thank you</h1>
+                </section>
+
+                <section>
+                    <h1>Questions</h1>
                 </section>
 			</div>
 		</div>
